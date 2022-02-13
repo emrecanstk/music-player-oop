@@ -8,5 +8,8 @@ public class Song {
         this.name = name;
         this.duration = duration;
     }
-    
+
+    public Song() {
+        
+    }
 }
