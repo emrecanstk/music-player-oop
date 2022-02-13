@@ -16,5 +16,16 @@ public class Album {
     public Album() {
 
     }
-    
+
+    public boolean addSong(String title, dobule duration) {
+        if(findSong(title) == null) {
+            songs.add(new Song(title,duration));
+            System.out.println(title + "successfully added to the list.");
+            return true;
+        }
+        else {
+            System.out.println("Song with name "+title+"already exist in the list.");
+            return false;
+        }
+    }
 }
