@@ -1,6 +1,7 @@
 package com.emrecanstk;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Album {
     private String name;
@@ -34,5 +35,15 @@ public class Album {
             System.out.println("Song with name "+title+"already exist in the list.");
             return false;
         }
+    }
+
+    public  boolean addToPlayList(int trackNumber, LinkedList<Song> PlayList) {
+        int index = trackNumber - 1;
+        if(index > 0 && index <= this.songs.size()) {
+            PlayList.add(this.songs.get(index));
+            return true;
+        }
+        System.out.println("this album does not have song with track number "+ trackNumber);
+        return false;
     }
 }
