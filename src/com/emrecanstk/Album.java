@@ -17,7 +17,14 @@ public class Album {
 
     }
 
-    public boolean addSong(String title, dobule duration) {
+    public Song findSong(String title) {
+        for(Song checkedSong : songs) {
+            if(checkedSong.getTitle().equals(title)) return checkedSong;
+        }
+        return null;
+    }
+
+    public boolean addSong(String title, double duration) {
         if(findSong(title) == null) {
             songs.add(new Song(title,duration));
             System.out.println(title + "successfully added to the list.");
