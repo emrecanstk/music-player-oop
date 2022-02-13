@@ -12,4 +12,12 @@ public class Song {
     public Song() {
 
     }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public double getDuration() {
+        return duration;
+    }
 }
