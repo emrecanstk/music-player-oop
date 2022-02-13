@@ -10,6 +10,6 @@ public class Album {
     public Album(String name, String artist, ArrayList<Song> songs) {
         this.name = name;
         this.artist = artist;
-        this.songs = songs;
+        this.songs = new ArrayList<Song>();
     }
 }
