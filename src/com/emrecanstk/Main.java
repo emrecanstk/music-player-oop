@@ -25,8 +25,12 @@ public class Main {
         LinkedList<Song> playList_1 = new LinkedList<>();
         albums.get(0).addToPlayList("Milimetrik Atis",playList_1);
         albums.get(0).addToPlayList("Koy",playList_1);
+        albums.get(0).addToPlayList("Tam Kafadan",playList_1);
         albums.get(1).addToPlayList("Donence",playList_1);
         albums.get(1).addToPlayList("Hal Hal",playList_1);
+        albums.get(1).addToPlayList("Gul Pembe",playList_1);
+        albums.get(1).addToPlayList("Halil Ibrahim Sofrasi",playList_1);
+        albums.get(1).addToPlayList("Nazar Eyle",playList_1);
 
         play(playList_1);
 
