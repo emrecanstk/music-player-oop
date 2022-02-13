@@ -46,4 +46,15 @@ public class Album {
         System.out.println("this album does not have song with track number "+ trackNumber);
         return false;
     }
+
+    public boolean addToPlayList(String title, LinkedList<Song> PlayList) {
+        for(Song checkedSong : this.songs) {
+            if(checkedSong.getTitle().equals(title)) {
+                PlayList.add(checkedSong);
+                return true;
+            }
+        }
+        System.out.println(title+"there is no such song in album.");
+        return false;
+    }
 }
