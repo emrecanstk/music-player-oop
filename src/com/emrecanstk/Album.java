@@ -12,4 +12,9 @@ public class Album {
         this.artist = artist;
         this.songs = new ArrayList<Song>();
     }
+
+    public Album() {
+
+    }
+    
 }
